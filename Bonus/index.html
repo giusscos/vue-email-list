@@ -15,10 +15,8 @@
         <h1>
             {{ title }}
         </h1>
-        <ol>
-            <li v-if="emailRandom.length < 10">
-            </li>
-            <li v-else v-for="email in emailRandom">
+        <ol v-if="emailRandom.length >= 10">
+            <li v-for="email in emailRandom">
                 {{email}}
             </li>
         </ol>
