@@ -15,7 +15,8 @@ const app = new Vue({
             }
         }
     },
-    mounted() {
+    beforeMount() {
         this.genEmail(10)
     }
+    
 })
