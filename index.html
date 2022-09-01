@@ -15,8 +15,6 @@
         <h1>
             {{ title }}
         </h1>
-        <input type="text" v-model="emailsNum" placeholder="Quante email vuoi generare?">
-        <button @click="genEmail(emailsNum)">Genera Email</button>
         <ol>
             <li v-for="email in emailRandom">
                 {{ email }}

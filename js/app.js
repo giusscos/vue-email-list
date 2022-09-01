@@ -2,7 +2,6 @@ const app = new Vue({
     el: '#app',
     data: {
         title: 'Vue - Gen Emails',
-        emailsNum: '',
         emailRandom: new Array (),
     },
     methods: {
@@ -14,7 +13,9 @@ const app = new Vue({
                             // console.log(this.emailRandom)
                     })
             }
-            this.emailsNum = ''
         }
     },
+    mounted() {
+        this.genEmail(10)
+    }
 })
