@@ -16,8 +16,8 @@
             {{ title }}
         </h1>
         <ol>
-            <li v-for="email in emailRandom">
-                {{ email }}
+            <li>
+                {{ emailRandom.length < 10 ? '' : emailRandom  }}
             </li>
         </ol>
     </div>
